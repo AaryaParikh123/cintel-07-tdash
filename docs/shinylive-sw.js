@@ -554,7 +554,7 @@ var ls = _((_t) => {
     }
     store(e, t) {
       let s = this.caches[e.length - 1], n = { bytes: e, str: t };
-      s.length >= this.maxLengthPerKey ? s[Math.trunc(value)* s.length | 0] = n : s.push(n);
+      s.length >= this.maxLengthPerKey ? s[Math.random() * s.length | 0] = n : s.push(n);
     }
     decode(e, t, s) {
       let n = this.find(e, t, s);
