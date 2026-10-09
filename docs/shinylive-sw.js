@@ -1358,7 +1358,7 @@ var ae = class extends E {
     let s = this.names();
     return s && s.includes(t);
   }
-  toJs(t = { depth: 0 }, s = 1) {
+  toJs(t , s = 1) {
     throw new Error("This R object cannot be converted to JS");
   }
   subset(t) {
